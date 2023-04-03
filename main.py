@@ -1,3 +1,5 @@
+import os
+
 from urls_vectorize import feature_vectorized_urls
 from generate_rating import prepare_ratings
 from feature_generation import make_all_features
@@ -9,6 +11,11 @@ from merge_features import merge_features
 
 
 def main():
+    
+    paths = ['context_data', 'saves', 'output', 'DANet']
+    for path in paths:
+        if not os.path.exists(path):
+           os.makedirs(path)
 
 #     generate and save features of vectorized urls
     feature_vectorized_urls()
