@@ -32,5 +32,7 @@ The sklearn StackingClassifier showen good score, but less than DANet = 1.68
 # Run
 
 To run the model place files with with input data in Context_data folder and run
-
+```
+pip install -r requirements.txt
 python3 main.py
+```
